@@ -1,0 +1,164 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin-bottom: 40px;
+}
+header{
+  background-color: #6312FF;
+  padding: 15px;
+  width: 100%;
+}
+.header-sec{
+  width: 90%;
+  margin: auto;
+  display: grid;
+}
+.menu{
+  width: 9%;
+  padding: 4px 7px;
+  border-radius: 10px;
+  display: none;
+}
+.menu hr{
+  height: 2px;
+  background: white;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.header-item-container{
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+.header-item{
+  text-align: center;
+  padding: 4px 7px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.header-item:hover, .menu:hover{
+  background: #581CCE;
+}
+.login-button-container{
+  grid-column: 5 / span 2;
+}
+.login-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  background: #FF2C6C;
+  padding: 2px 5px;
+  transition: 2s;
+  margin-left: 45%;
+  
+}
+.login-button img{
+  width: 30%;
+  transition: 2s;
+}
+.login-button:hover{
+  width: 95%;
+  background-color: #00E5CA;
+  margin-left: 0;
+}
+.login-button:hover img{
+  width:15%;
+}
+.banner div{
+  width: 40%;
+  padding: 5%;
+}
+.banner img{
+  width: 100%;
+  transition: 2s;
+}
+.banner img:hover{
+  transform: scale(1.1) rotate(30deg);
+}
+.banner{
+  display:flex;
+  justify-content: space-around;
+}
+.banner h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  background: #FF2C6C;
+  padding: 4px 7px;
+  transition: 2s;
+}
+.link:hover{
+  width: 95%;
+  background: #00E5CA;
+}
+
+
+
+
+
+/*-------------------------
+          media
+-------------------------*/
+/*small device*/
+@media only screen and (max-width: 688px) {
+  header{
+    padding: 7px 0px;
+  }
+  .header-sec{
+    width: 90%;
+    display: block;
+  }
+  .login-button-container{
+   width: 40%;
+  }
+  .login-button img{
+    width: 20%;
+  }
+  .header-item-container{
+    display: none;
+  }
+  .header-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu{
+    display: block;
+  }
+  .banner{
+    display: block;
+  }
+  .banner div{
+    width: 90%;
+    margin: auto;
+    padding: 7% 0;
+    text-align: center;
+  }
+  .link-button{
+    width: 40% !important;
+  }
+}
+
+
+
+/*medium*/
+/*
+@media only screen and (max-width: 1080px) {
+  
+  
+}
+*/
