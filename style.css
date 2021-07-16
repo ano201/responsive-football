@@ -9,6 +9,7 @@ header{
   background-color: #6312FF;
   padding: 15px;
   width: 100%;
+  margin-bottom: 40px;
 }
 .header-sec{
   width: 90%;
@@ -105,9 +106,20 @@ a{
   width: 95%;
   background: #74E1E5;
 }
-
-
-
+.player-container{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+}
+.player{
+  padding: 5%;
+  box-shadow: 5px -5px 10px #DDDDDD, -5px 5px 10px #DDDDDD, 5px 5px 10px #DDDDDD, -5px -5px 10px #DDDDDD;
+}
+.player img{
+  width: 100%;
+}
 
 
 /*-------------------------
@@ -150,6 +162,15 @@ a{
   }
   .link-button{
     width: 40% !important;
+  }
+  .banner img{
+    width: 90%;
+  }
+  .player-container{
+    display: block;
+  }
+  .player{
+    margin-bottom: 25px;
   }
 }
 
