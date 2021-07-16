@@ -91,7 +91,7 @@ a{
 .banner h1{
   color: white;
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 50px;
 }
 .link{
   display: flex;
@@ -109,18 +109,55 @@ a{
 .player-container{
   width: 90%;
   margin: auto;
-  display: grid;
+  display: none;
   grid-template-columns: auto auto auto;
   grid-gap: 25px;
 }
 .player{
-  padding: 5%;
+  padding: 3%;
   box-shadow: 5px -5px 15px #EDEDED, -5px 5px 15px #EDEDED, 5px 5px 15px #EDEDED, -5px -5px 15px #EDEDED;
 }
-.player img{
+.player img, .highlight img{
   width: 100%;
 }
-
+.player:hover{
+  box-shadow: 5px -5px 15px #C7C7CA, -5px 5px 15px #C7C7CA, 5px 5px 15px #C7C7CA, -5px -5px 15px #C7C7CA;
+}
+.highlight{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.highlight div{
+  width: 50%;
+}
+.highlight h1{
+  font-weight: bolder;
+  font-size: 50px;
+}
+.highlight .link-button{
+  width: 37%;
+}
+.logo{
+  margin: auto;
+  width: 50%;
+}
+.logo img{
+  width: 100%;
+}
+.social-link{
+  display: flex;
+  justify-content: center;
+}
+.social-link div{
+  width: 5%;
+  padding: 1%;
+}
+.social-link img{
+  width: 100%;
+}
 
 /*-------------------------
           media
@@ -167,11 +204,29 @@ a{
     width: 90%;
   }
   .player-container{
-    display: block;
+    display: none;
   }
   .player{
     margin-bottom: 25px
   }
+  .highlight{
+    display: block;
+    text-align: center;
+  }
+  .highlight div{
+    width: 100%;
+  }
+  .highlight .link-button{
+    margin: auto;
+    width: 20%;
+  }
+  .logo{
+    width: 80%;
+  }
+  .social-link div{
+    width: 19%;
+  }
+  
 }
 
 
@@ -180,7 +235,24 @@ a{
 
 /*
 @media only screen and (max-width: 1080px) {
-  
-  
+  .player-container{
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlight{
+    display: block;
+  }
+  .highlight div{
+    width: 100%;
+  }
+  .highlight .link-button{
+    width: 20%;
+  }
+  .logo{
+    width: 80%;
+  }
+  .social-link div{
+    width: 10%;
+  }
 }
 */
