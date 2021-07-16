@@ -158,6 +158,9 @@ a{
 .social-link img{
   width: 100%;
 }
+.copyright{
+  text-align: center;
+}
 
 /*-------------------------
           media
@@ -226,7 +229,6 @@ a{
   .social-link div{
     width: 19%;
   }
-  
 }
 
 
