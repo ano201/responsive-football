@@ -109,7 +109,7 @@ a{
 .player-container{
   width: 90%;
   margin: auto;
-  display: none;
+  display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 25px;
 }
@@ -204,7 +204,7 @@ a{
     width: 90%;
   }
   .player-container{
-    display: none;
+    display: block;
   }
   .player{
     margin-bottom: 25px
@@ -220,7 +220,7 @@ a{
     margin: auto;
     width: 20%;
   }
-  .logo{
+ .logo{
     width: 80%;
   }
   .social-link div{
@@ -233,10 +233,10 @@ a{
 
 /*medium devices*/
 
-/*
-@media only screen and (max-width: 1080px) {
+
+@media only screen and (min-width: 688px) and (max-width: 1080px) {
   .player-container{
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .highlight{
@@ -255,4 +255,3 @@ a{
     width: 10%;
   }
 }
-*/
