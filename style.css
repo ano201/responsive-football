@@ -115,7 +115,7 @@ a{
 }
 .player{
   padding: 5%;
-  box-shadow: 5px -5px 10px #DDDDDD, -5px 5px 10px #DDDDDD, 5px 5px 10px #DDDDDD, -5px -5px 10px #DDDDDD;
+  box-shadow: 5px -5px 15px #EDEDED, -5px 5px 15px #EDEDED, 5px 5px 15px #EDEDED, -5px -5px 15px #EDEDED;
 }
 .player img{
   width: 100%;
@@ -170,7 +170,7 @@ a{
     display: block;
   }
   .player{
-    margin-bottom: 25px;
+    margin-bottom: 25px
   }
 }
 
