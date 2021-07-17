@@ -112,6 +112,7 @@ a{
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 25px;
+  transition: 2s;
 }
 .player{
   padding: 3%;
@@ -122,6 +123,18 @@ a{
 }
 .player:hover{
   box-shadow: 5px -5px 15px #C7C7CA, -5px 5px 15px #C7C7CA, 5px 5px 15px #C7C7CA, -5px -5px 15px #C7C7CA;
+}
+#view-all-button{
+  text-align: center;
+  display: none;
+}
+#view-all{
+  color: white;
+  background-color: #FF2C6C;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  font-size: 22px;
 }
 .highlight{
   width: 90%;
@@ -209,8 +222,20 @@ a{
   .player-container{
     display: block;
   }
+  #all-players{
+    height: 700px;
+    overflow: hidden;
+    border: 4px solid #FF2C6C;
+    border-radius: 5px;
+  }
   .player{
     margin-bottom: 25px
+  }
+  #view-all-button{
+    display: block;
+  }
+  #view-all{
+    border-radius: 0 0 5px 5px;
   }
   .highlight{
     display: block;
@@ -246,6 +271,18 @@ a{
   }
   .highlight div{
     width: 100%;
+  }
+  #all-players{
+    height: 1000px;
+    overflow: hidden;
+    border: 4px solid #FF2C6C;
+    border-radius: 5px;
+  }
+  #view-all-button{
+    display: block;
+  }
+  #view-all{
+    border-radius: 0 0 5px 5px;
   }
   .highlight .link-button{
     width: 20%;
