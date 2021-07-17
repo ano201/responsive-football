@@ -16,13 +16,19 @@ header{
   margin: auto;
   display: grid;
 }
-.menu{
+#menu, #close-menu{
   width: 9%;
   padding: 4px 7px;
   border-radius: 10px;
   display: none;
+  color: white;
+  font-weight: bolder;
 }
-.menu hr{
+#close-menu{
+  font-size: 35px;
+  text-align: center;
+}
+#menu hr{
   height: 2px;
   background: white;
   border-radius: 10px;
@@ -44,7 +50,7 @@ a{
   border-radius: 10px;
   transition: 1s;
 }
-.header-item:hover, .menu:hover{
+.header-item:hover, #menu:hover, #close-menu:hover{
   background: #581CCE;
 }
 .login-button-container{
@@ -195,13 +201,20 @@ a{
   }
   .header-item-container{
     display: none;
+    transition: height 1s;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  .header-item-container div{
+    margin-bottom: 10px;
+    overflow: hidden;
   }
   .header-sec{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .menu{
+  #menu{
     display: block;
   }
   .banner{
@@ -261,7 +274,7 @@ a{
 /*medium devices*/
 
 
-@media only screen and (min-width: 688px) and (max-width: 1080px) {
+@media only screen and (min-width: 688px) and (max-width: 990px) {
   .player-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
